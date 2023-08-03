@@ -48,3 +48,6 @@
 		('shama','ingale','rahatni','Amravti','Maharastra',400105,9356763410,'shamaingale@gmail.com'),
 		('Rasikaa','Deshmukh','Pune','Kharadi','Maharastra',411105,9888888880,'rasika@gmail.com'),
 		('tanavi','banait','Mumbai','Airoli','Maharastra',444100,9345678900,'tanavibanait@gmail.com');
+
+		--UC4 Ability to edit existing contact person using their name
+		UPDATE AddressBookDB SET City='Delhi' where FirstName='Rucha';
