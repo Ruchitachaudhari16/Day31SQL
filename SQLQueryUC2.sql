@@ -83,3 +83,8 @@
 		UPDATE AddressBookDB SET AddressBookType='Friends' ,AddressBookName='Siu' 
 		WHERE PersonID='6';
 
+		
+		--UC10 Ability to get number of contact persons i.e. count by type
+		--//Ruchita is variable where will store the adressbooktype count
+		SELECT AddressBookType,COUNT(AddressBookType) AS Ruchita From AddressBookDB GROUP BY AddressBookType;
+
