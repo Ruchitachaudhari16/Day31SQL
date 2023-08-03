@@ -66,3 +66,20 @@
 		SELECT * From AddressBookDB Where City='Amravti' ORDER BY FirstName ASC;
 		SELECT * From AddressBookDB ORDER BY FirstName;
 
+		--UC9 Ability to identify each Address Book with name and type.
+		-- Here the type could Family, Friends,Profession, etc Alter Address Book to add name and type
+		ALTER TABLE AddressBookDB ADD AddressBookType VARCHAR(50);
+		ALTER TABLE AddressBookDB ADD AddressBookName VARCHAR(50);
+		UPDATE AddressBookDB SET AddressBookType='Friends' ,AddressBookName='AB' 
+		WHERE PersonID='2'
+		UPDATE AddressBookDB SET AddressBookType='Family' ,AddressBookName='Ac' 
+		WHERE PersonID='3'
+		UPDATE AddressBookDB SET AddressBookType='Friends' ,AddressBookName='KL' 
+		WHERE PersonID='4'
+		UPDATE AddressBookDB SET AddressBookType='Office' ,AddressBookName='MN' 
+		WHERE PersonID='5'
+		UPDATE AddressBookDB SET AddressBookType='Emergancy' ,AddressBookName='NB' 
+		WHERE PersonID='1'
+		UPDATE AddressBookDB SET AddressBookType='Friends' ,AddressBookName='Siu' 
+		WHERE PersonID='6';
+
