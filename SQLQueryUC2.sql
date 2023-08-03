@@ -51,3 +51,6 @@
 
 		--UC4 Ability to edit existing contact person using their name
 		UPDATE AddressBookDB SET City='Delhi' where FirstName='Rucha';
+
+		--UC5 Ability to delete a person using a persons name
+		DELETE AddressBookDB WHERE FirstName='Nikita';
