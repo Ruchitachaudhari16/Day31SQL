@@ -54,3 +54,6 @@
 
 		--UC5 Ability to delete a person using a persons name
 		DELETE AddressBookDB WHERE FirstName='Nikita';
+
+		--UC6 Ability to retrieve Person Belonging to a city or state from the AddressBook
+		SELECT * From AddressBookDB WHERE City='Amravti';
