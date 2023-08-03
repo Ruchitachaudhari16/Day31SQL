@@ -57,3 +57,6 @@
 
 		--UC6 Ability to retrieve Person Belonging to a city or state from the AddressBook
 		SELECT * From AddressBookDB WHERE City='Amravti';
+
+		--UC7 Ability to understand the size of address book by city and State
+		SELECT COUNT(*) From AddressBookDB WHERE City='Amravti';
