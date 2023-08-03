@@ -88,3 +88,9 @@
 		--//Ruchita is variable where will store the adressbooktype count
 		SELECT AddressBookType,COUNT(AddressBookType) AS Ruchita From AddressBookDB GROUP BY AddressBookType;
 
+		--UC11 Ability to add person to both Friend and Family
+		INSERT INTO AddressBookDB(FirstName,LastName,Address,City,State,Zip,PhoneNumber,EmailID,AddressBookType,AddressBookName)
+		VALUES('Dipti','Raul','Bombay','am','Maharastra',444100,9000004080,'diptir@gmail.com','Office','DE');
+
+
+
