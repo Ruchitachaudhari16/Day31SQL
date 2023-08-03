@@ -60,3 +60,9 @@
 
 		--UC7 Ability to understand the size of address book by city and State
 		SELECT COUNT(*) From AddressBookDB WHERE City='Amravti';
+
+		--UC8 Ability to retrieve entries sorted 
+		SELECT * From AddressBookDB ORDER BY City ASC;
+		SELECT * From AddressBookDB Where City='Amravti' ORDER BY FirstName ASC;
+		SELECT * From AddressBookDB ORDER BY FirstName;
+
